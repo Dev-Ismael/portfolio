@@ -87,6 +87,10 @@ div.underline {
   margin: -20px auto 40px auto;
 }
 
+i {
+  color: #2a8e82;
+}
+
 /*========= layout =========*/
 /*==================================================================
 ============== Header =============================================
@@ -167,6 +171,34 @@ div.underline {
   }
   #home h1 {
     font-size: 25px;
+  }
+}
+/*========= layout =========*/
+/*==================================================================
+============== About =============================================
+=================================================================*/
+#about {
+  position: relative;
+}
+#about .left-section::before {
+  content: "";
+  position: absolute;
+  right: -170px;
+  top: -40px;
+  width: 300px;
+  height: 260px;
+  background: url("../images/xdots.webp");
+}
+#about .my-bio p {
+  color: #000;
+}
+
+/*========== About Responsive ===========*/
+@media (max-width: 768px) {
+  #about .left-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
