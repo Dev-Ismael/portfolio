@@ -1,0 +1,16 @@
+/*====== Transtion =======*/
+@mixin transition( $sec ){
+    -webkit-transition:  all $sec ease-in-out;
+    -moz-transition:  all $sec ease-in-out;
+    -o-transition:  all $sec ease-in-out;
+    -ms-transition:  all $sec ease-in-out;
+    transition:  all $sec ease-in-out;
+}
+/*====== Transtion =======*/
+@mixin borderRadius( $px ){
+    border-radius: $px;
+    -webkit-border-radius: $px;
+    -moz-border-radius: $px;
+    -ms-border-radius: $px;
+    -o-border-radius: $px;
+}

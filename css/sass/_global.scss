@@ -1,7 +1,36 @@
 /*==================================================================
 ============== Global Properties ===================================
 =================================================================*/
-p{
-    font-size: 60px;
-    color: #000;
+body {
+    font-family: "Nunito", sans-serif;
+    line-height: 1.6;
+    background: #ffffff;
+    overflow-x: hidden;
+    font-size: 16px;
+}
+body::-webkit-scrollbar {
+    background-color: $lightMainColor;
+    width: 7px;
+    right: -10px
+}
+body::-webkit-scrollbar-thumb{
+    background-color: $mainColor;
+    border-radius:8px;
+    right: -10px
+}
+.site-section{
+    padding: 60px 0px 
+}
+p.heading{
+    font-size: 45px;
+}
+.hidden{
+    display: none !important
+}
+div.underline{
+    width: 40px;
+    height: 4px;
+    background-color: $mainColor;
+    margin: -20px auto 40px auto;
+    
 }

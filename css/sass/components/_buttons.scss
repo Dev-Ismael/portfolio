@@ -1,0 +1,36 @@
+/*============ Button Style ===============*/
+.btn{
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 800;
+    transition: all 0.3s ease-in-out;
+}
+.green-btn{
+    background-color: #fff;
+    background-color: $mainColor;
+    color: $white;
+}
+.green-btn:hover{
+    background-color: $white;
+}
+.green-btn.without-hover:hover{
+    background-color: #fff;
+    background-color: $mainColor;
+    color: $white;
+}
+.white-btn{
+    background-color: #fff;
+    background-color: $white;
+}
+.white-btn:hover{
+    background-color: $mainColor;
+    color: $white;
+}
+/*========== Button Responsive ===========*/
+@media (max-width: 768px){
+    .btn{
+        padding: 7px 10px;
+        font-size: 14px;    
+    }    
+}

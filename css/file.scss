@@ -1,5 +1,17 @@
-/**/
+
+
+/*========= helpers =========*/
 @import "sass/helpers/vars";
 @import "sass/helpers/mixin";
-@import "sass/global";
+
+
+/*========= components =========*/
 @import "sass/components/buttons";
+
+
+/*========= global =========*/
+@import "sass/global";
+
+
+/*========= layout =========*/
+@import "sass/layout/header";

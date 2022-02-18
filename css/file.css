@@ -1,9 +1,173 @@
+/*========= helpers =========*/
+/*====== Transtion =======*/
+/*====== Transtion =======*/
+/*========= components =========*/
+/*============ Button Style ===============*/
+.btn {
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 800;
+  transition: all 0.3s ease-in-out;
+}
+
+.green-btn {
+  background-color: #fff;
+  background-color: #2a8e82;
+  color: #fff;
+}
+
+.green-btn:hover {
+  background-color: #fff;
+}
+
+.green-btn.without-hover:hover {
+  background-color: #fff;
+  background-color: #2a8e82;
+  color: #fff;
+}
+
+.white-btn {
+  background-color: #fff;
+  background-color: #fff;
+}
+
+.white-btn:hover {
+  background-color: #2a8e82;
+  color: #fff;
+}
+
+/*========== Button Responsive ===========*/
+@media (max-width: 768px) {
+  .btn {
+    padding: 7px 10px;
+    font-size: 14px;
+  }
+}
+/*========= global =========*/
 /*==================================================================
 ============== Global Properties ===================================
 =================================================================*/
-p {
-  font-size: 60px;
-  color: #000;
+body {
+  font-family: "Nunito", sans-serif;
+  line-height: 1.6;
+  background: #ffffff;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+body::-webkit-scrollbar {
+  background-color: #2a8e8238;
+  width: 7px;
+  right: -10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #2a8e82;
+  border-radius: 8px;
+  right: -10px;
+}
+
+.site-section {
+  padding: 60px 0px;
+}
+
+p.heading {
+  font-size: 45px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+div.underline {
+  width: 40px;
+  height: 4px;
+  background-color: #2a8e82;
+  margin: -20px auto 40px auto;
+}
+
+/*========= layout =========*/
+/*==================================================================
+============== Header =============================================
+=================================================================*/
+#home {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* Vertical */
+  justify-content: center;
+  /* Horizontal */
+  text-align: center;
+  background-image: url("../images/bg.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*============ Animation ===============*/
+}
+#home > ::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+#home .header-info {
+  margin-top: 6rem;
+}
+#home .header-info h1 {
+  font-weight: 900;
+  line-height: 1;
+}
+#home .go-down {
+  position: absolute;
+  bottom: -130%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#home .go-down span {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  transform: rotate(45deg);
+  margin: 0px;
+  animation: arrows 2s infinite;
+}
+#home .go-down span:nth-child(2) {
+  animation-delay: -0.1s;
+}
+#home .go-down span:nth-child(3) {
+  animation-delay: -0.2s;
+}
+@keyframes arrows {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
+/*========== Header Responsive ===========*/
+@media (max-width: 768px) {
+  #home {
+    background-image: url("../images/bg-mob.png");
+  }
+  #home h1 {
+    font-size: 25px;
+  }
 }
 
 /*# sourceMappingURL=file.css.map */
