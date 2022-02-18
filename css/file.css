@@ -73,7 +73,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 p.heading {
-  font-size: 45px;
+  font-size: 35px;
 }
 
 .hidden {
@@ -84,7 +84,14 @@ div.underline {
   width: 40px;
   height: 4px;
   background-color: #2a8e82;
-  margin: -20px auto 40px auto;
+  margin: -10px auto 40px auto;
+}
+
+div.underline-align-left {
+  width: 40px;
+  height: 4px;
+  background-color: #2a8e82;
+  margin: -10px 0px 40px 50px;
 }
 
 i {
@@ -173,7 +180,6 @@ i {
     font-size: 25px;
   }
 }
-/*========= layout =========*/
 /*==================================================================
 ============== About =============================================
 =================================================================*/
@@ -199,6 +205,66 @@ i {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+/*==================================================================
+============== Skills =============================================
+=================================================================*/
+#skills .progress-bars > div:nth-of-type(2) {
+  position: relative;
+}
+#skills .progress-bars > div:nth-of-type(2) span {
+  position: absolute;
+  width: 4px;
+  height: 80%;
+  top: 10%;
+  background: #2a8e82;
+  border-radius: 5px;
+}
+#skills .progress-bars .skill h3 {
+  font-size: 18px;
+}
+#skills .progress-bars .skill .progress {
+  overflow: visible;
+  margin-bottom: 26px;
+  height: 4px;
+}
+#skills .progress-bars .skill .progress .progress-bar {
+  background-color: #2a8e82;
+  position: relative;
+  border-radius: 4px;
+  overflow: visible;
+  height: 5px;
+}
+#skills .progress-bars .skill .progress span {
+  background-color: #2a8e82;
+  position: absolute;
+  bottom: -25px;
+  font-size: 10px;
+  line-height: 10px;
+  padding: 4px 5px;
+  right: -1.4em;
+  border-radius: 2px;
+}
+#skills .progress-bars .skill .progress span::after {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #2a8e82;
+  border-width: 5px;
+  margin-left: -5px;
+}
+
+/*========== Skills Responsive ===========*/
+@media (max-width: 768px) {
+  #skills .progress-bars > div:nth-of-type(2) span {
+    display: none;
   }
 }
 
