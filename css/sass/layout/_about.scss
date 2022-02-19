@@ -25,6 +25,7 @@
 /*========== About Responsive ===========*/
 @media (max-width: 768px){
     #about .left-section{
+        overflow-x: hidden;
         display: flex;
         justify-content: center;
         align-items: center
