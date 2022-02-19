@@ -309,7 +309,6 @@ body {
   font-family: "Nunito", sans-serif;
   line-height: 1.6;
   background: #ffffff;
-  overflow-x: hidden;
   font-size: 16px;
 }
 
@@ -660,7 +659,7 @@ i {
 #footer .copyright {
   background-color: #1e1e1e;
   color: #e5e5e5;
-  font-size: 17px;
+  font-size: 16px;
   margin-bottom: -10px;
   padding: 15px 0px;
 }
