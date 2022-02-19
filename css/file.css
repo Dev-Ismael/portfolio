@@ -376,15 +376,16 @@ i {
   line-height: 1;
 }
 #home .go-down {
+  cursor: pointer;
   position: absolute;
-  bottom: -130%;
+  bottom: -140%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 #home .go-down span {
   display: block;
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
   border-bottom: 2px solid white;
   border-right: 2px solid white;
   transform: rotate(45deg);
