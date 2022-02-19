@@ -625,6 +625,7 @@ i {
 }
 #footer .widget .links li a {
   color: #777;
+  text-transform: capitalize;
 }
 #footer .widget .links li i {
   padding-right: 10px;

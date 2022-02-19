@@ -34,7 +34,7 @@ bar.addEventListener('click', ()=>{
     nav.classList.toggle("mob-nav");
 });
 /*========== at click links go sections ===========*/
-var navAnchors = document.querySelectorAll(".nav-links a");
+var navAnchors = document.querySelectorAll("ul a");
 navAnchors.forEach( navAnchor  => {
     navAnchor.onclick = function (e){
         e.preventDefault();
