@@ -463,7 +463,11 @@ i {
   border-radius: 5px;
 }
 #skills .progress-bars .skill h3 {
+  display: inline;
   font-size: 18px;
+}
+#skills .progress-bars .skill h3 img {
+  margin-bottom: 5px;
 }
 #skills .progress-bars .skill .progress {
   overflow: visible;

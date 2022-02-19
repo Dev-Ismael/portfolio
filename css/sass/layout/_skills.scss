@@ -17,7 +17,11 @@
         }
         .skill{
             h3{
+                display: inline;
                 font-size: 18px;
+                img{
+                    margin-bottom: 5px;
+                }
             }
             .progress {
                 overflow: visible;
