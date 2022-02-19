@@ -2,37 +2,51 @@
 /*====== Transtion =======*/
 /*====== Transtion =======*/
 /*========= components =========*/
-/*============ Button Style ===============*/
+/*==================================================================
+======================== Button style -=============================
+=================================================================*/
 .btn {
   padding: 10px 15px;
   border-radius: 25px;
   font-size: 14px;
   font-weight: 800;
   transition: all 0.3s ease-in-out;
+  /*========== green-btn ===========*/
+  /*========== green-btn ===========*/
+  /*========== green-btn without-hover ===========*/
 }
-
-.green-btn {
-  background-color: #fff;
+.btn.green-btn {
   background-color: #2a8e82;
   color: #fff;
 }
-
-.green-btn:hover {
-  background-color: #fff;
+.btn.green-btn i {
+  transition: all 0.3s ease-in-out;
+  color: #fff;
 }
-
-.green-btn.without-hover:hover {
+.btn.green-btn:hover {
   background-color: #fff;
+  color: #2a8e82;
+}
+.btn.green-btn:hover i {
+  color: #2a8e82;
+}
+.btn.white-btn {
+  background-color: #fff;
+  color: #2a8e82;
+}
+.btn.white-btn i {
+  transition: all 0.3s ease-in-out;
+  color: #2a8e82;
+}
+.btn.white-btn:hover {
   background-color: #2a8e82;
   color: #fff;
 }
-
-.white-btn {
-  background-color: #fff;
-  background-color: #fff;
+.btn.white-btn:hover i {
+  color: #fff;
 }
-
-.white-btn:hover {
+.btn.green-btn.without-hover:hover {
+  background-color: #fff;
   background-color: #2a8e82;
   color: #fff;
 }

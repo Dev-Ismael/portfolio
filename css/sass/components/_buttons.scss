@@ -1,32 +1,58 @@
-/*============ Button Style ===============*/
+/*==================================================================
+======================== Button style -=============================
+=================================================================*/
 .btn{
     padding: 10px 15px;
     border-radius: 25px;
     font-size: 14px;
     font-weight: 800;
     transition: all 0.3s ease-in-out;
+    
+
+    /*========== green-btn ===========*/
+    &.green-btn{
+        background-color: $mainColor;
+        color: $white;
+        i{
+            transition: all 0.3s ease-in-out;
+            color: $white; 
+        }
+        &:hover{
+            background-color: $white;
+            color: $mainColor;
+            i{
+                color: $mainColor; 
+            }
+        }
+    }
+
+
+    /*========== green-btn ===========*/
+    &.white-btn{
+        background-color: $white;
+        color: $mainColor;
+        i{
+            transition: all 0.3s ease-in-out;
+            color: $mainColor; 
+        }
+        &:hover{
+            background-color: $mainColor;
+            color: $white;
+            i{
+                color: $white; 
+            }
+        }
+    }
+
+    /*========== green-btn without-hover ===========*/
+    &.green-btn.without-hover:hover{
+        background-color: #fff;
+        background-color: $mainColor;
+        color: $white;
+    }
 }
-.green-btn{
-    background-color: #fff;
-    background-color: $mainColor;
-    color: $white;
-}
-.green-btn:hover{
-    background-color: $white;
-}
-.green-btn.without-hover:hover{
-    background-color: #fff;
-    background-color: $mainColor;
-    color: $white;
-}
-.white-btn{
-    background-color: #fff;
-    background-color: $white;
-}
-.white-btn:hover{
-    background-color: $mainColor;
-    color: $white;
-}
+
+
 /*========== Button Responsive ===========*/
 @media (max-width: 768px){
     .btn{
