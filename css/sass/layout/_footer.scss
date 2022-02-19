@@ -1,0 +1,61 @@
+/*==================================================================
+============== Footer =============================================
+=================================================================*/
+#footer{
+    background: #efefef;
+    padding-top: 40px;
+    font-size: 14px;
+    color: #888;
+    margin-top: 40px;
+    .widget {
+        margin-bottom: 20px;
+        display: block;
+        position: relative;
+        z-index: 1;
+        h3 {
+            font-size: 20px;
+            color: #000000;
+            font-weight: 500;
+        }
+        .social{
+            display: flex;
+            i{
+                font-size: 32px;
+                margin: 0px 20px;
+                color: #888;
+                &:nth-of-type(1){
+                    margin-left: 0px;
+                }
+            }
+        }
+        .links {
+            width: 150px;
+            li {
+                display: flex;
+                margin-bottom: 5px;
+                a {
+                    color: #777;
+                    
+                }
+                i{
+                    padding-right: 10px;
+                    margin-top: 5px;                
+                }
+            }
+        }
+    }
+    address{
+        margin-bottom: 0;
+        padding-bottom: 3px;
+    }
+    .copyright{
+        background-color: #1e1e1e;
+        color: #e5e5e5;
+        font-size: 17px;
+        margin-bottom: -10px;
+        padding: 15px 0px;
+        .fa-heart{
+            color: #dc3545;
+        }
+    }
+}
