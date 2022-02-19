@@ -1,0 +1,20 @@
+/*==================================================================
+============== Services =============================================
+=================================================================*/
+#services{
+    
+    .site-service-item {
+        padding: 30px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        height: 300px;
+        .icon {
+            font-size: 50px;
+            color: $mainColor;
+        }
+        h3 {
+            font-size: 18px;
+        }
+    }
+
+}
