@@ -34,7 +34,7 @@ bar.addEventListener('click', ()=>{
     nav.classList.toggle("mob-nav");
 });
 /*========== at click links go sections ===========*/
-var navAnchors = document.querySelectorAll(".nav-links li a");
+var navAnchors = document.querySelectorAll(".nav-links a");
 navAnchors.forEach( navAnchor  => {
     navAnchor.onclick = function (e){
         e.preventDefault();
@@ -42,6 +42,25 @@ navAnchors.forEach( navAnchor  => {
         element.scrollIntoView({behavior: "smooth"});
     }
 });
+
+
+
+
+
+
+/*==================================================================
+======================== Works =====================================
+==================================================================*/
+var myWorksBtn = document.querySelector(".works-btn");
+myWorksBtn.onclick = function (e){
+    e.preventDefault();
+    works.scrollIntoView({behavior: "smooth"});
+}
+
+
+
+
+
 /*==================================================================
 ======================== Absolute Icons ============================
 ==================================================================*/
