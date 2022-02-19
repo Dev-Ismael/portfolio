@@ -45,6 +45,191 @@
   }
 }
 /*==================================================================
+============== NavBar =============================================
+=================================================================*/
+#navbar {
+  height: 60px;
+  width: 100vw;
+  background-color: transparent;
+  position: fixed;
+  z-index: 10;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  /*=== Logo ===*/
+  /*=== nav-links ===*/
+  /*=== Bar Icon ===*/
+}
+#navbar.navbar-sticky {
+  height: 50px;
+  box-shadow: 0px 0px 15px 0px #3c3c3c;
+  background-color: #fff;
+}
+#navbar.navbar-sticky a {
+  color: #2a8e82 !important;
+}
+#navbar.navbar-sticky .bar div {
+  background: #2a8e82;
+}
+#navbar.mob-nav {
+  height: 60px;
+  box-shadow: none;
+  background-color: transparent;
+}
+#navbar.mob-nav a {
+  color: #2a8e82 !important;
+}
+#navbar.mob-nav .bar div {
+  background: #2a8e82;
+}
+#navbar .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+#navbar .logo {
+  z-index: 999999;
+}
+#navbar .logo a {
+  color: #fff;
+}
+#navbar .logo a img {
+  height: 25px;
+  width: 25px;
+}
+#navbar .nav-links {
+  display: flex;
+  list-style: none;
+  width: 85vw;
+  justify-content: flex-end;
+  margin-bottom: 0px;
+}
+#navbar .nav-links li {
+  position: relative;
+}
+#navbar .nav-links li a {
+  text-transform: capitalize;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1vw;
+}
+#navbar .nav-links li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  height: 2px;
+  border-radius: 5px;
+  width: 0%;
+  margin-left: 10%;
+  background-color: #2a8e82;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#navbar .nav-links li a:hover {
+  color: #2a8e82;
+}
+#navbar .nav-links li a:hover:before {
+  width: 80%;
+}
+#navbar .bar {
+  display: none;
+  /*Animating bar Icon on Click*/
+}
+#navbar .bar div {
+  width: 35px;
+  height: 4px;
+  background: #fff;
+  margin: 4px;
+  border-radius: 7px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+#navbar .bar.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+#navbar .bar.toggle .line2 {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  width: 0;
+}
+#navbar .bar.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/*===== Stying for small screens ====*/
+@media (max-width: 768px) {
+  #navbar {
+    position: fixed;
+    z-index: 9999;
+  }
+  #navbar .bar {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  #navbar .nav-links {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.9);
+    height: 80vh;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    flex-direction: column;
+    -webkit-clip-path: circle(0px at 100% 0%);
+    clip-path: circle(0px at 100% 0%);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    pointer-events: none;
+    box-shadow: 0px 0px 15px 0px #00000085;
+    /*===== At Open ====*/
+  }
+  #navbar .nav-links li {
+    opacity: 0;
+  }
+  #navbar .nav-links.open {
+    padding-left: 0px;
+    text-align: center;
+    clip-path: circle(1000px at 100%);
+    -webkit-clip-path: circle(1000px at 100%);
+    pointer-events: all;
+  }
+  #navbar .nav-links.open li.fade {
+    opacity: 1;
+    margin: 17px;
+  }
+  #navbar .nav-links.open li.fade a {
+    color: #2a8e82;
+  }
+  #navbar .nav-links.open li a:hover::before {
+    width: 20%;
+    margin-left: 40%;
+  }
+}
+/*==================================================================
 ============== Absolute Icons =============================================
 =================================================================*/
 #absolute-icons .fa-arrow-alt-circle-up {
