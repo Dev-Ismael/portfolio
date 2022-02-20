@@ -2,24 +2,91 @@
 ============== Works =============================================
 =================================================================*/
 #works{
-    .row.no-gutters [class*=col-] {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .img-wrapper {
-        overflow: hidden;
-        img {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            -webkit-transition: -webkit-transform .5s ease;
-            transition: -webkit-transform .5s ease;
-            transition: transform .5s ease;
-            transition: transform .5s ease, -webkit-transform .5s ease;
-            &:hover {
-                -webkit-transform: scale(1.5);
-                        transform: scale(1.5);
-                cursor: zoom-in;
+    .work-card{
+        position: relative;
+        margin: 30px auto;
+        cursor: pointer;
+        max-width:  300px;
+        height: 200px;
+        .border-box{
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            width: 80%;
+            height: 80%;
+            border-radius: 3px;
+            border: 7px solid #2a8e82;
+            opacity:0;
+            @include transition( 0.3s );
+            z-index: 999;
+        }
+        .work-img{
+            position: absolute;
+            top: 0px;
+            width:  100%;
+            height: 180px;
+            background-position: center;
+            background-size: cover;
+            @include transition( 0.3s);
+            @include borderRadius( 7px );
+            &:after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                @include transition( 0.3s);
+                @include borderRadius( 7px );
+                background-color: hsla(0, 0%, 0%, 0.251);
+            }
+        }
+        .buttons{
+            position: absolute;
+            width: 100%;
+            bottom: 0px;
+            height: 20px;
+            overflow: hidden;
+            .buttons-inner{
+                top: 0px;
+                width: 100%;
+                position: absolute;
+                @include transition( 0.3s );
+                span{
+                    @include transition( 0.3s );
+                    color: #000;
+                    font-weight: bolder;
+                }
+                span.project-name{
+                    opacity: 1;
+                }
+                span.link{
+                    text-transform: uppercase;
+                    opacity: 0;
+                }
+            }
+        }
+        // At Hover Work Card
+        &:hover{
+            .work-img{
+                top: -20px;
+                &:after {
+                    background-color: #0000008f;
+                }
+            }
+            .border-box{
+                opacity:1;
+            }
+            .buttons{
+                .buttons-inner{
+                    top: -30px;
+                    span.project-name{
+                        opacity: 0;
+                    }
+                    span.link{
+                        opacity: 1;
+                    }
+                }
             }
         }
     }
