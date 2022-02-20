@@ -560,31 +560,41 @@
 
                     <div class="col-lg-7">
             
-                        <form class="contact-form" >
+                        <form id="my-form" class="contact-form" action="https://formspree.io/f/xzboravg" method="POST">
                             <div class="row">
                                 <div class="col-6">
                                     <div class="form-group">
                                         <label class="fname" for="fname">First name</label>
-                                        <input type="text" class="form-control" id="fname">
+                                        <input type="text" name="frist-name" class="form-control" id="fname">
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-group">
                                         <label class="lname" for="lname">Last name</label>
-                                        <input type="text" class="form-control" id="lname">
+                                        <input type="text"  name="last-name" class="form-control" id="lname">
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="email" for="email">Email address</label>
-                                <input type="email" class="form-control" id="email">
+                                <input type="email"  name="email" class="form-control" id="email">
                             </div>
                             <div class="form-group">
                                 <label class="message" for="message">Message</label>
                                 <textarea name="message" class="form-control" id="message" cols="5" rows="30"></textarea>
                             </div>
-                            <button type="submit" class="btn green-btn without-hover">Send Messege</button>
+                            <button type="submit" id="my-form-button" class="btn green-btn without-hover">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                Send Messege
+                            </button>
+                            <p id="my-form-status"></p>
+
                         </form>
+
+
+           
+
+
 
                     </div> 
                 
@@ -740,6 +750,10 @@
         <!--- lightgallery Js --->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="js/magnific-popup.js"></script>
+
+        <!--- FormsPree --->
+        <script src="js/formprees.js"></script>
+
 
         <!--- Js File --->
         <script src="js/file.js"></script>

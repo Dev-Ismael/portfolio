@@ -10,16 +10,31 @@
   border-radius: 25px;
   font-size: 14px;
   font-weight: 800;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   /*========== green-btn ===========*/
   /*========== green-btn ===========*/
   /*========== green-btn without-hover ===========*/
+}
+.btn i {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .btn.green-btn {
   background-color: #2a8e82;
   color: #fff;
 }
 .btn.green-btn i {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   color: #fff;
 }
@@ -35,6 +50,10 @@
   color: #2a8e82;
 }
 .btn.white-btn i {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   color: #2a8e82;
 }
@@ -48,6 +67,9 @@
 .btn.green-btn.without-hover:hover {
   background-color: #fff;
   background-color: #2a8e82;
+  color: #fff;
+}
+.btn.green-btn.without-hover:hover i {
   color: #fff;
 }
 

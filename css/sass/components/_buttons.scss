@@ -6,15 +6,17 @@
     border-radius: 25px;
     font-size: 14px;
     font-weight: 800;
-    transition: all 0.3s ease-in-out;
-    
+    @include transition( 0.3s);
+    i{
+        @include transition( 0.3s);
+    }
 
     /*========== green-btn ===========*/
     &.green-btn{
         background-color: $mainColor;
         color: $white;
         i{
-            transition: all 0.3s ease-in-out;
+            @include transition( 0.3s);
             color: $white; 
         }
         &:hover{
@@ -32,7 +34,7 @@
         background-color: $white;
         color: $mainColor;
         i{
-            transition: all 0.3s ease-in-out;
+            @include transition( 0.3s);
             color: $mainColor; 
         }
         &:hover{
@@ -49,6 +51,9 @@
         background-color: #fff;
         background-color: $mainColor;
         color: $white;
+        i{
+            color: $white ;
+        }
     }
 }
 
