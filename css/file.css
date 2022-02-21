@@ -414,6 +414,9 @@ i {
   font-weight: 900;
   line-height: 1;
 }
+#home .header-info h1 .colored {
+  color: #39b9a9;
+}
 #home .go-down {
   cursor: pointer;
   position: absolute;
@@ -759,7 +762,6 @@ i {
 }
 #footer .widget .links li a {
   color: #777;
-  text-transform: capitalize;
 }
 #footer .widget .links li i {
   padding-right: 10px;
