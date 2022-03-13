@@ -106,15 +106,6 @@ arrowIcon.onclick = function (e){
 /*==================================================================
 ======================== Loading Overlay ===========================
 ==================================================================*/
-function funRender() {
-    document.getElementById("loading-overlay").style.opacity = '1';
-} 
-function funload() {
-    // console.log("funload");
-    document.getElementById("loading-overlay").style.opacity = '0';
-    setInterval(function(){ 
+setTimeout(function(){
         document.getElementById("loading-overlay").style.display = 'none';
-    }, 5000);
-}  
-window.onprerender = funRender();
-window.onload = funload();
+}, 2000);
